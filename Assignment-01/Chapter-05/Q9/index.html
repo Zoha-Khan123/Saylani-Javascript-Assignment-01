@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency in PKR</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Currency in PKR</h1>
+  <p id="totalCurrency"></p>
+
+  <script>
+    // Conversion rates
+    let usDollarToPkr = 104.80;
+    let saudiRiyalToPkr = 28;
+
+    // Amount of currencies
+    let dollars = 10;
+    let riyals = 25;
+
+    // Calculate total currency in Pakistani Rupees
+    let totalPkr = (dollars * usDollarToPkr) + (riyals * saudiRiyalToPkr);
+
+    document.getElementById('totalCurrency').innerHTML = `Total currency in PKR: ${totalPkr}`;
+  </script>
+
+</body>
+</html>

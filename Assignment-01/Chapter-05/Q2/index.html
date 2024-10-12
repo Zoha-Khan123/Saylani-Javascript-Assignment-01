@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arithmetic Operations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .result-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2, p {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="result-box">
+    <h2>Results:</h2>
+    <p id="addition"></p>
+    <p id="subtraction"></p>
+    <p id="multiplication"></p>
+    <p id="division"></p>
+    <p id="modulus"></p>
+  </div>
+
+  <script>
+    // Prompt the user to input two numbers
+    let value1 = parseFloat(prompt("Enter the first number:"));
+    let value2 = parseFloat(prompt("Enter the second number:"));
+
+    // Perform all the arithmetic operations
+    let sum = value1 + value2;
+    let difference = value1 - value2;
+    let product = value1 * value2;
+    let quotient = value1 / value2;
+    let modulus = value1 % value2;
+
+    document.getElementById('addition').innerHTML = `The sum of ${value1} and ${value2} is ${sum}`;
+    document.getElementById('subtraction').innerHTML = `The difference of ${value1} and ${value2} is ${difference}`;
+    document.getElementById('multiplication').innerHTML = `The product of ${value1} and ${value2} is ${product}`;
+    document.getElementById('division').innerHTML = `The quotient of ${value1} divided by ${value2} is ${quotient}`;
+    document.getElementById('modulus').innerHTML = `The modulus of ${value1} and ${value2} is ${modulus}`;
+  </script>
+
+</body>
+</html>

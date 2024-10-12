@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum of Two Numbers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .result-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="result-box">
+    <h2 id="result"></h2>
+  </div>
+
+  <script>
+    // Prompt the user to input two numbers
+    let value1 = parseFloat(prompt("Number of tickets you wanna buy:"));
+    let value2 = parseFloat(prompt("The single ticket price is:"));
+
+    // Calculate the sum of the two numbers
+    let result = value1 * value2;
+
+    document.getElementById('result').innerHTML = `Total cost to buy ${value1} tickets to a movie is ${result} PKR`;
+  </script>
+
+</body>
+</html>

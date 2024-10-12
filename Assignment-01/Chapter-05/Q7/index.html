@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Shopping Cart</h1>
+
+  <p id="item1Price"></p>
+  <p id="item1Qty"></p>
+  <p id="item2Price"></p>
+  <p id="item2Qty"></p>
+  <p id="shipping"></p>
+  <p id="totalCost"></p>
+
+  <script>
+    // Store the variables
+    let priceItem1 = 850;
+    let priceItem2 = 200;
+    let quantityItem1 = 3;
+    let quantityItem2 = 7;
+    let shippingCharges = 100;
+
+    // Calculate total cost
+    let totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+    document.getElementById('item1Price').innerHTML = `Price of item 1 is ${priceItem1}`;
+    document.getElementById('item1Qty').innerHTML = `Quantity of item 1 is ${quantityItem1}`;
+    document.getElementById('item2Price').innerHTML = `Price of item 2 is ${priceItem2}`;
+    document.getElementById('item2Qty').innerHTML = `Quantity of item 2 is ${quantityItem2}`;
+    document.getElementById('shipping').innerHTML = `Shipping Charges ${shippingCharges}`;
+    document.getElementById('totalCost').innerHTML = `Total cost of your order is ${totalCost}`;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometrizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Geometrizer</h1>
+
+  <p id="radius"></p>
+  <p id="circumference"></p>
+  <p id="area"></p>
+
+  <script>
+    // Store the radius into a variable
+    let radius = 20;
+    const pi = 3.142;
+
+    // Calculate the circumference (2 * pi * r)
+    let circumference = 2 * pi * radius;
+
+    // Calculate the area (pi * r^2)
+    let area = pi * radius * radius;
+
+    document.getElementById('radius').innerHTML = `Radius of a circle: ${radius}`;
+    document.getElementById('circumference').innerHTML = `The circumference is: ${circumference}`;
+    document.getElementById('area').innerHTML = `The area is: ${area}`;
+  </script>
+
+</body>
+</html>

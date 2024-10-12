@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Age Calculator</h1>
+
+  <p id="currentYear"></p>
+  <p id="birthYear"></p>
+  <p id="age"></p>
+
+  <script>
+    // Store the current year and birth year in variables
+    let currentYear = 2016;
+    let birthYear = 1992;
+
+    // Calculate the two possible ages
+    let age1 = currentYear - birthYear;
+    let age2 = age1 - 1;
+
+    document.getElementById('currentYear').innerHTML = `Current Year: ${currentYear}`;
+    document.getElementById('birthYear').innerHTML = `Birth Year: ${birthYear}`;
+    document.getElementById('age').innerHTML = `Your age is: ${age2} or ${age1}`;
+  </script>
+
+</body>
+</html>

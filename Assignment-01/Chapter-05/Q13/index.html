@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifetime Supply Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Lifetime Supply Calculator</h1>
+
+  <p id="snack"></p>
+  <p id="currentAge"></p>
+  <p id="maxAge"></p>
+  <p id="snackPerDay"></p>
+  <p id="supply"></p>
+
+  <script>
+    // Store the snack, age, max age, and amount per day
+    let favoriteSnack = 'Chocolate chip';
+    let currentAge = 15;
+    let maxAge = 65;
+    let snacksPerDay = 2;
+
+    // Calculate the total supply needed
+    let yearsRemaining = maxAge - currentAge;
+    let totalSnacksNeeded = yearsRemaining * 365 * snacksPerDay;
+
+    document.getElementById('snack').innerHTML = `Favorite Snack: ${favoriteSnack}`;
+    document.getElementById('currentAge').innerHTML = `Current Age: ${currentAge}`;
+    document.getElementById('maxAge').innerHTML = `Estimated Max Age: ${maxAge}`;
+    document.getElementById('snackPerDay').innerHTML = `Amount of Snacks per day: ${snacksPerDay}`;
+    document.getElementById('supply').innerHTML = `You will need ${totalSnacksNeeded} ${favoriteSnack} to last you until the ripe old age of ${maxAge}.`;
+  </script>
+
+</body>
+</html>

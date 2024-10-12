@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="tableTitle"></h2>
+  <div id="tableContent"></div>
+
+  <script>
+    // Ask the user for the number
+    let number = parseInt(prompt("Enter a number for the multiplication table:"));
+
+    // Display the title of the multiplication table
+    document.getElementById('tableTitle').innerHTML = `Table of ${number}`;
+
+    // Generate the multiplication table
+    let table = "";
+    for (let i = 1; i <= 10; i++) {
+      table += `<p>${number} x ${i} = ${number * i}</p>`;
+    }
+
+    document.getElementById('tableContent').innerHTML = table;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Expressions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="step1"></p>
+  <p id="step2"></p>
+  <p id="step3"></p>
+  <p id="step4"></p>
+  <p id="step5"></p>
+  <p id="step6"></p>
+
+  <script>
+
+    let number;
+
+    document.getElementById('step1').innerHTML = `Value after variable declaration is: ${number}`;
+
+    number = 9;
+
+    document.getElementById('step2').innerHTML = `Initial value: ${number}`;
+
+    number++;
+
+    document.getElementById('step3').innerHTML = `Value after increment is: ${number}`;
+
+    number += 7;
+
+    document.getElementById('step4').innerHTML = `Value after addition is: ${number}`;
+
+    number--;
+
+    document.getElementById('step5').innerHTML = `Value after decrement is: ${number}`;
+
+    // Step k: Show the remainder after dividing the variable’s value by 3
+    let remainder = number % 3;
+
+    document.getElementById('step6').innerHTML = `The remainder is: ${remainder}`;
+  </script>
+
+</body>
+</html>

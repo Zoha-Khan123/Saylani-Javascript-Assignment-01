@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Marks Sheet</h1>
+
+  <p id="totalMarks"></p>
+  <p id="marksObtained"></p>
+  <p id="percentage"></p>
+
+  <script>
+    // Store the total marks and marks obtained in variables
+    let totalMarks = 980;
+    let marksObtained = 804;
+
+    // Calculate the percentage
+    let percentage = (marksObtained / totalMarks) * 100;
+
+    document.getElementById('totalMarks').innerHTML = `Total marks: ${totalMarks}`;
+    document.getElementById('marksObtained').innerHTML = `Marks obtained: ${marksObtained}`;
+    document.getElementById('percentage').innerHTML = `Percentage: ${percentage}%`;
+
+  </script>
+
+</body>
+</html>

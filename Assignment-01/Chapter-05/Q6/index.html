@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="cToF"></p>
+  <p id="fToC"></p>
+
+  <script>
+    
+    let celsius = 25;
+
+    // Step b: Convert Celsius to Fahrenheit
+    let fahrenheitFromCelsius = (celsius * 9/5) + 32;
+
+    document.getElementById('cToF').innerHTML = `${celsius}&#8451; is ${fahrenheitFromCelsius}&#8457;`;
+
+    let fahrenheit = 70;
+
+    // Step d: Convert Fahrenheit to Celsius
+    let celsiusFromFahrenheit = (fahrenheit - 32) * 5/9;
+
+    document.getElementById('fToC').innerHTML = `${fahrenheit}&#8457; is ${celsiusFromFahrenheit}&#8451;`;
+
+  </script>
+
+</body>
+</html>
